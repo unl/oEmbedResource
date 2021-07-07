@@ -1,0 +1,33 @@
+{
+    "name": "unl/oembedresource",
+    "description": "Generates an oEmbed resource to be returned to an oEmbed request",
+    "keywords": [
+        "oembed",
+        "resource"
+    ],
+    "homepage": "https://github.com/unl/oEmbedResource",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Burge",
+            "email": "cburge2@unl.edu",
+            "homepage": "https://chrisburge.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.3",
+        "ext-dom": "*"
+    },
+    "require-dev": { },
+    "autoload": {
+        "psr-4": {
+            "unl\\OembedResource\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "unl\\OembedResource\\Test\\": "test"
+        }
+    }
+}
