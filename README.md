@@ -1,6 +1,8 @@
+![TravisCI Status](https://travis-ci.com/unl/oEmbedResource.svg?branch=1.x.x)
+
 # oEmbed Resource
 
-The oEmbed Resource class generates JSON and XML resource payloads to return to oEmbed requests.
+The `OembedResource` class generates JSON and XML resource payloads to return to oEmbed requests.
 
 ## Install
 
@@ -42,6 +44,10 @@ $resource = new OembedResource('video');
 The class provides GETTER and SETTER methods:
 
 ``` php
+// Type
+// Required to instantiate class.
+$type= $resource->getType();
+
 // Title (string)
 // Optional
 $resource->setTitle('My Video');
