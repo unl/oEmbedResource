@@ -151,6 +151,17 @@ class OembedResource
     }
 
     /**
+     * Sets the "type" parameter.
+     *
+     * @return string
+     *   The "type" parameter.
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
      * Sets the "title" parameter.
      *
      * @param string $title
@@ -288,7 +299,7 @@ class OembedResource
      * @param string $thumbnail_url
      *   The "thumbnail_url" parameter.
      */
-    public function setThumbnailUrl(int $thumbnail_url)
+    public function setThumbnailUrl(string $thumbnail_url)
     {
         $this->thumbnail_url = $thumbnail_url;
     }
@@ -332,7 +343,7 @@ class OembedResource
      * @param string $thumbnail_height
      *   The "thumbnail_height" parameter.
      */
-    public function setThumbnailHeight(string $thumbnail_height)
+    public function setThumbnailHeight(int $thumbnail_height)
     {
         $this->thumbnail_height = $thumbnail_height;
     }
